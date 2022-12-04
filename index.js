@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-const port = 80;
+const port = 3001;
 
 app.use(cors());
 
@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 
 app.get("/url", (req, res, next) => {
-    res.json(["Tony","Lisa","Michael","Ginger","Food"]);
+    res.json('Hello World');
    });
 
 app.listen(port, () => console.log(`Hello world app listening on port ${port}!`));
